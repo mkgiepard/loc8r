@@ -59,3 +59,9 @@ typings/
 
 # next.js build output
 .next
+
+# mongo dump dir
+dump/
+
+# config files
+local-config-files/
