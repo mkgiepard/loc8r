@@ -65,3 +65,6 @@ dump/
 
 # config files
 local-config-files/
+
+# Compiled Angular FE
+/app_public/build

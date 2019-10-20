@@ -10,17 +10,11 @@ block content
     .col-12.col-md-8
       .error= message
       
-      each location in locations
-        .card
-          .card-block
-            h4
-              a(href=`/location/${location.id}`)= location.name
-              small &nbsp;
-                +outputRating(location.rating)
-              span.badge.badge-pill.badge-default.float-right= location.distance
-            p.address= location.address
-            .facilities
-              each facility in location.facilities
-                span.badge.badge-warning= facility
+      app-home-list
+
     .col-12.col-md-4
       p.lead Looking for wifi and a seat? Loc8r helps you find places to work when out and about. Perhaps with coffee, cake or a pint? Let Loc8r help you find the place you're looking for.
+block scripts
+  script(src='/build/runtime-es2015.e8a2810b3b08d6a1b6aa.js')
+  script(src='/build/polyfills-es2015.0ef207fb7b4761464817.js')
+  script(src='/build/main-es2015.60a1550e738a004389d0.js')
