@@ -85,3 +85,6 @@ body {
   color: #fff;
   background-color: #108a93;
 }
+.container {
+  display:flex;
+}
